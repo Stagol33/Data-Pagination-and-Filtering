@@ -144,12 +144,12 @@ const handleSearch = () => {
 	
 	// Show filtered students or display no results message
 	if (filteredList.length > 0) {
-	showPage(filteredList, 1);
-	addPagination(filteredList);
+		showPage(filteredList, 1);
+		addPagination(filteredList);
 	} else {
-	const studentList = document.querySelector('.student-list');
-	studentList.innerHTML = '<li class="no-results">No results found</li>';
-	addPagination(filteredList); // This will clear the pagination
+		const studentList = document.querySelector('.student-list');
+		studentList.innerHTML = '<li class="no-results">No results found</li>';
+		addPagination(filteredList); // This will clear the pagination
 	}
 };
 
