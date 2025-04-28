@@ -37,7 +37,7 @@ for (let i = 0; i < list.length; i++) {
 			<span class="email">${student.email}</span>
 		</div>
 		<div class="joined-details">
-			<span class="date">Joined ${new Date(student.registered.date).toLocaleDateString('en-US')}</span>
+			<span class="date">Joined ${student.registered.date}</span>
 		</div>
 		</li>
 	`;
